@@ -5,6 +5,11 @@ class Weather
         @rain = rain
         @wind = wind
     end 
+
+	def hurricane(rain)
+        @rain = "100%"
+    end
+
 end
 
 weather_array = []
@@ -22,3 +27,4 @@ weather_array.push(weather_array_day2)
 weather_array.each do |weather|
     puts "Today's weather has a #{weather.rain} chance of rain with #{weather.wind} winds."
 end
+
